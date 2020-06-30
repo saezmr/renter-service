@@ -2,6 +2,7 @@ package an.dpr.rentalcycling.renter;
 
 import java.net.URI;
 
+import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -15,7 +16,9 @@ import javax.ws.rs.core.Response;
 import org.bson.types.ObjectId;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import an.dpr.rentalcycling.bike.BikeApi;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 
